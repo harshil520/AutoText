@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Search from './_components/Search'
 import TemplateList from './_components/TemplateList'
 
-export default function page() {
+export default function Dashboard() {
 
   const [searchInput, setSearchInput] = useState<string>();
 
