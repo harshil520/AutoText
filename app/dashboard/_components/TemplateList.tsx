@@ -24,13 +24,10 @@ function TemplateList({ searchInput }: any) {
     const [templateList, setTemplateList] = useState(Templates);
 
     useEffect(() => {
-        // console.log(searchInput);
         if (searchInput) {
             const result = Templates.filter((item) => {
                 return item.name.toLowerCase().includes(searchInput.toLowerCase());
             });
-            // console.log(result);
-
             setTemplateList(result);
         } else {
             setTemplateList(Templates);
